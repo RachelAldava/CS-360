@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/event_row">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/cardEventTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/cardEventDescription"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constrainedWidth="true"
+                app:layout_constrainedHeight="true"/>
+
+            <EditText
+                android:id="@+id/cardEventTitleEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:hint="Enter description"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/cardEventDescription"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constrainedWidth="true"
+                app:layout_constrainedHeight="true"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textTimeHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Set Event Time:"
+                android:textAlignment="center"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textTimeHeader"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/editDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:text="Set Date"
+                    android:padding="0dp"
+                    android:visibility="gone"
+                    tools:layout_editor_absoluteX="194dp"
+                    tools:layout_editor_absoluteY="-4dp" />
+
+                <TextView
+                    android:id="@+id/textDate"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="25dp"
+                    android:text="mmm, dd, yyyy"
+                    android:gravity="center"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+                <Button
+                    android:id="@+id/editTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:text="Set Time"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textTime"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="25dp"
+                    android:text="xx:xx xm"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/cardEventDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Event description"
+                android:textAlignment="textStart"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_editor_absoluteX="28dp" />
+
+            <EditText
+                android:id="@+id/cardEventDescriptionEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:hint="Enter description"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintVertical_bias="0.0"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <Button
+                    android:id="@+id/event_row_delete"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:text="delete"
+                    app:icon="@android:drawable/ic_menu_delete"
+                    app:iconTint="#FF0000"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/event_row_save"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:text="save"
+                    app:icon="@android:drawable/ic_menu_save"
+                    app:iconTint="#00FF00"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/event_row_edit"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="edit"
+                android:textAlignment="center"
+                app:icon="@android:drawable/ic_menu_edit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout4" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/textReminderHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder:" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textDateReminder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:gravity="center"
+                        android:minHeight="25dp"
+                        android:text="mmm, dd, yyyy"
+                        android:textAlignment="center"/>
+
+
+                    <TextView
+                        android:id="@+id/textTimeReminder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="xx:xx xm"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/editReminderDate"
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Set date"
+                        android:textAlignment="center"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/editReminderTime"
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Set Time"
+                        android:textAlignment="center"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>

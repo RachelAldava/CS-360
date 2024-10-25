@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="login_please_sign_in">Please sign in</string>
+    <string name="login_enter_username">Enter Username</string>
+    <string name="login_enter_password">Enter Password</string>
+    <string name="login_log_in">Log in</string>
+    <string name="login_new_user">New User</string>
+    <string name="login_error_invalid_credentials">Error: Invalid Credentials</string>
+    <string name="row_title">Title</string>
+    <string name="row_description_of_event">Description of event</string>
+    <string name="row_date">July 30, 2022</string>
+    <string name="row_time">8:30 AM</string>
+    <string name="event_row_delete">Delete</string>
+    <string name="event_row_edit">Edit</string>
+    <string name="event_row_title">Event Title</string>
+    <string name="event_row_description">An event description in which users can input multiple lines.</string>
+    <string name="event_row_date">Month DD YYYY</string>
+    <string name="event_row_time">8:00 a.m.</string>
+    <string name="edit_event_activity_title">Edit Event</string>
+    <string name="enter_event_title">Enter Event Title</string>
+    <string name="enter_event_description">Enter Event Description</string>
+    <string name="edit_event_date">Change date</string>
+    <string name="edit_event_time">Change Time</string>
+    <string name="edit_event_confirm">Confirm</string>
+    <string name="edit_event_cancel">Cancel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_view_event">View Events</string>
+    <string name="menu_edit_event">Edit Event</string>
+    <string name="toggle_allow_notifications">Allow Notifications</string>
+    <string name="notification_title">Notification Settings</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="toggle_allow_push_notifications">Allow Push Notifications</string>
+    <string name="toggle_allow_SMS_notifications">Allow SMS Notifications</string>
+    <string name="loginSuccess">User successfully created!</string>
+    <string name="loginFailure">Username already exists</string>
+    <string name="loginOneMoment">Success! One moment please...</string>
+    <string name="loginUsernamePassNotFound">Username or password not found</string>
+
+</resources>
